@@ -1,7 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:xf.uiux.standard" x:Class="xf.uiux.standard.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:xf.uiux.standard" 
+             x:Class="xf.uiux.standard.MainPage"
+             BackgroundColor="#FFFFFF">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackLayout  HorizontalOptions="Center"
+                   VerticalOptions="Center">            
+                <Label Text="Welcome to" FontSize="30"
+                   FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                   TextColor="#33384E"/>
+                <Label FontSize="Large" 
+                       TextColor="#33384E"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Text="environment comfortable and natural"/>
+            </StackLayout>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Image Source="flowerpot"
+                   BackgroundColor="Fuchsia"
+                   Aspect="AspectFill"/>
+        </Grid>
+        <Grid  Grid.Row="2">
+            <StackLayout Margin="50,10">
+                <Button Text="Login now" TextColor="#FFFFFF"
+                        BackgroundColor="#10E1A7" CornerRadius="25"
+                        HeightRequest="50" Margin="0,0,0,10"/>
+                <Button Text="Singup" TextColor="#33384E"
+                        BackgroundColor="#FFFFFF" CornerRadius="25"
+                        BorderColor="#33384E" BorderWidth="1"
+                        HeightRequest="50" Margin="0,0,0,10"/>
+                <Label Text="Terms and conditions" FontSize="Large"
+                       TextColor="#33384E" HorizontalOptions="Center"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
