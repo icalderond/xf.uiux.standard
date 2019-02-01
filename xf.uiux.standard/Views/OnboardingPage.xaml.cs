@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace xf.uiux.standard
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace xf.uiux.standard.Views
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class OnboardingPage : ContentPage
     {
-        public MainPage()
+        public OnboardingPage()
         {
             InitializeComponent();
         }
